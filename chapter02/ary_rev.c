@@ -1,11 +1,16 @@
+/*
+2026-02-03
+배열의 값 뒤집기
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
 #include<errno.h>
 
-void input (int *pn,const int *size);
-void swap (int *pn,const int *size);
-void output (int *pn,const int *size);
+void input (const int *pn,const int *size);
+void swap (const int *pn,const int *size);
+void output (const int *pn,const int *size);
 
 int main(void)
 {
@@ -31,7 +36,7 @@ int main(void)
   return 0;
 }
 
-void input(int *pn,const int *size)
+void input(const int *pn,const int *size)
 {
   for(int i = 0; i < *size; i++)
   {
@@ -39,7 +44,7 @@ void input(int *pn,const int *size)
   }
 }
 
-void swap(int *pn,const int *size)
+void swap(const int *pn,const int *size)
 {
   for(int i = 0; i < *size/2; i++)
   {
@@ -52,7 +57,7 @@ void swap(int *pn,const int *size)
   }
 }
 
-void output(int *pn,const int *size)
+void output(const int *pn,const int *size)
 {
   for(int i=0;i<*size;i++)
   {

@@ -1,3 +1,8 @@
+/*
+2026-02-03
+최댓값 찾기
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<errno.h>
