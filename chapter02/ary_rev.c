@@ -8,8 +8,8 @@
 #include<time.h>
 #include<errno.h>
 
-void input (const int *pn,const int *size);
-void swap (const int *pn,const int *size);
+void input (int *pn,const int *size);
+void swap (int *pn,const int *size);
 void output (const int *pn,const int *size);
 
 int main(void)
@@ -36,7 +36,7 @@ int main(void)
   return 0;
 }
 
-void input(const int *pn,const int *size)
+void input(int *pn,const int *size)
 {
   for(int i = 0; i < *size; i++)
   {
@@ -44,7 +44,7 @@ void input(const int *pn,const int *size)
   }
 }
 
-void swap(const int *pn,const int *size)
+void swap(int *pn,const int *size)
 {
   for(int i = 0; i < *size/2; i++)
   {
