@@ -8,7 +8,7 @@
 #include<errno.h>
 #include<time.h>
 
-int maxof(const int a[], int n);
+int maxof(int *a, int n);
 
 int main(void)
 {
