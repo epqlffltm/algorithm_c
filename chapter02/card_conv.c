@@ -25,11 +25,11 @@ int main(void)
 
   // 2진수 변환
   int d2 = card_conv(value, 2, result);
-  printf(" %d진수: %s\n",d2, result);
+  printf("%d진수: %s\n",d2, result);
 
   // 8진수 변환
   int d8 = card_conv(value, 8, result);
-  printf(" %d진수: %s\n",d8, result);
+  printf("%d진수: %s\n",d8, result);
 
   // 16진수 변환
   int d16 = card_conv(value, 16, result);
