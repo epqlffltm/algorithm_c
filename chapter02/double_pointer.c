@@ -5,7 +5,7 @@
 
 #include<stdio.h>
 
-void clock(int n);
+void clock(int *pn);
 
 int main(void)
 {
@@ -18,15 +18,16 @@ int main(void)
 	printf("pary[1] = %d\n",pary[1]);
 	printf("*(pary+1) = %d\n",*(pary+1));
 
-	clock(ary[1]);
-	clock(pary[1]);
-	clock(*(pary+1));
+	clock(&ary[0]);
+	clock(&pary[1]);
+	clock(pary+2);
 
 	return 0;
 }
 
-void clock(int n)
+void clock(int *pn)
 {
-	int m = n;
-	printf("%d\n",m);
+	int **pm;
+	pm = &pn;
+	printf("%d\n",**pm);
 }
